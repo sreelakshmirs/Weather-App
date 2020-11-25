@@ -1,0 +1,76 @@
+<div class="bodyContainer">
+    <div class="searchResultContainer">
+        <div class="searchcardTitle">
+            <!--back button-->
+            <button (click)="gotoHome()">Home</button>
+            <!--to display city name-->
+            <div class="title">{{weatherResponse.name}}</div>
+        </div>
+
+    </div>
+    <div class="searchDetails">
+        <div class="firstRow">
+            <!--To display temperature-->
+            <div class="searchTemp"> {{weatherResponse.temperature}}<span>°C</span>
+                <div class="climateContainer">
+                    <!--to display weather type-->
+                    <div class="climateType">{{weatherResponse.weather[0].description}}</div>
+                </div>
+            </div>
+            <div class="humidityContainer">
+                <div class="subtitle">HUMIDITY</div>
+                <!--To display humidity-->
+                <div class="pressure"> {{weatherResponse.main.humidity}}<span>%</span></div>
+            </div>
+            <div class="pressureContainer">
+                <div class="subtitle">PRESSURE</div>
+                <!--To display pressure-->
+                <div class="pressure"> {{weatherResponse.main.pressure}}<span>mb</span></div>
+            </div>
+        </div>
+        <div class="secondRow">
+            <div class="wind">
+                <div class="secondrowTitle">LOWEST</div>
+                <!--To display lowest temperature-->
+                <div class="windTemp"> {{weatherResponse.temperature_min}}<span>°C</span></div>
+            </div>
+            <div class="wind">
+                <div class="secondrowTitle">HIGEST</div>
+                <!--To display highest temperature-->
+                <div class="windTemp"> {{weatherResponse.temperature_max}}<span>°C</span></div>
+            </div>
+            <div class="wind">
+                <div class="secondrowTitle">WIND SPEED</div>
+                <!--To display wind speed-->
+                <div class="windTemp">{{weatherResponse.wind.speed}}</div>
+            </div>
+            <div class="wind">
+                <div class="secondrowTitle">WIND DEGREE</div>
+                <!--To display wind degree-->
+                <div class="windTemp">{{weatherResponse.wind.deg}}</div>
+            </div>
+        </div>
+        <div class="thirdRow">
+            <div class="third">
+                <div class="thirdrowTitle">LATITUDE</div>
+                <!--To display latitude-->
+                <div class="thirdDetails"> {{weatherResponse.coord.lat}}</div>
+            </div>
+            <div class="third">
+                <div class="thirdrowTitle">LONGITUDE</div>
+                <!--To display longitude-->
+                <div class="thirdDetails"> {{weatherResponse.coord.lon}}</div>
+            </div>
+            <div class="third">
+                <div class="thirdrowTitle">SUN RISE</div>
+                <!--To display sun rise-->
+                <div class="thirdDetails">{{weatherResponse.sys.sunrise * 1000 | date:"H:mm"}}<span>am</span></div>
+            </div>
+            <div class="third">
+                <div class="thirdrowTitle">SUN SET</div>
+                <!--To display sun set-->
+                <div class="thirdDetails">{{weatherResponse.sys.sunset * 1000 | date:"H:mm"}}<span>pm</span></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+/*CSS for header section*/
+.headerContainer{
+    background-color:  #48466d;
+    display:flex;
+    align-items: flex-start;
+    padding:17px 80px ;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); 
+}
+.logo{
+    flex:1;
+    width:64px;
+    padding-left: 15px; 
+}
+.title{
+    flex:22;
+    padding: 5px;
+    font-size: 38px;
+    margin-top: 9px;
+    display: flex;
+    color:white;
+}
+.dateTime{
+    margin-top: 9px;
+    color:#46cdcf;
+    font-size: 18px;
+    flex:3;
+}
+.date{
+    padding: 2px;
+    display: flex;
+}

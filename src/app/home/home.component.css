@@ -1,0 +1,143 @@
+/*CSS for home page*/
+.mainContainer{
+    background-color: #337ab7; 
+    display: flex;
+}
+.bodyContainer{
+    background-color: #337ab7;
+    display: flex;
+}
+.container{
+   padding:40px 80px 40px 80px  ;
+    display: flex;
+}
+.searchContainer{
+    display:flex;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 33px;
+}
+.inputBox{
+    flex:11;
+    padding-left: 15px; 
+}
+.input{
+    margin-top: 3px;
+    padding-bottom: 7px;
+    border-radius: 51px;  
+ }  
+ input{
+    outline:none;
+    background-color: #337ab7; 
+    border: none;
+    width: 445px;
+    font-size: 14px;
+    margin-top:7px;
+    margin-left: 3px;
+    color:white;
+    text-transform: capitalize;  
+ }
+ ::placeholder{
+     color:white;
+     font-weight: 500; 
+ }
+.buttonBox{
+    flex:1;
+    display: flex;
+    color:white;
+}
+.searchButton{
+    background-color:  #4d466d;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-left: 1px solid white;  
+    border-top-right-radius:125px ;
+    padding-left: 5px;
+    outline: none;
+    border-bottom-right-radius:125px ; 
+ }
+ button{
+     background-color:#4d466d;
+     outline: none;
+     border: none;
+     padding: 8px 7.5px 1px 21px;
+     font-size: 20px;
+     color:white;
+     border-top-right-radius:125px ;
+     font-weight: 400;  
+     border-bottom-right-radius:125px ;
+ }
+ #alert{
+    font-weight: 500;
+    font-size: 20px;
+    color:white;
+    padding-top: 5px;
+    margin-left: 3px;
+ }
+ .cardContainer{
+    background-color: #337ab7; 
+    display:flex;      
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.cardsubContainer{
+    border-radius: 5px; 
+}
+.cards{
+    margin-left:1.9%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.card{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    width:445px;
+    margin-left: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;   
+}
+.cardHeading{
+    background-color: #4d466d;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 24px;
+    font-weight: 500;
+    color:white;
+    text-align: center;  
+}
+.carddetails{
+    background-color: #46cdcf; 
+}
+.tempContainer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 65px;
+    color:#ffffff;
+    border-bottom: 1px solid lightseagreen;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;  
+}
+.climateContainer{
+    margin-top: 8px;
+    padding-bottom: 15px;  
+}
+ .climateType { 
+    border-radius: 20px;
+    font: 300 16px "Open Sans";
+    text-transform: capitalize;
+    font-style: normal;
+    padding: 2px 30px;
+    margin-top: 15px;
+    display: inline-block;
+    letter-spacing: 1px;
+    background: #2fb2b3;
+    color: #fff;
+    text-transform: uppercase;
+}

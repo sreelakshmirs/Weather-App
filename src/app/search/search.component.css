@@ -1,0 +1,121 @@
+.bodyContainer{
+    background-color: #337ab7; 
+    height: 717px;
+    padding: 15px;
+}
+.searchResultContainer{
+    margin-left: 15%;
+    display: flex;   
+}
+.searchcardTitle{
+    font: 400 22px "Open Sans";
+    width:80%;
+    background-color: #48466d;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center; 
+    display:flex;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    padding-bottom: 5px;
+    border-radius: 5px; 
+}
+.title{
+    flex: 72;  
+}
+button{
+    background-color: #4d466d;
+    flex:5;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;   
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.searchDetails {
+    margin-left: 15%;
+    width:68%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2fb2b3;
+    background-color:  #2fb2b3;
+}
+.firstRow{
+    display:flex;
+   padding-top: 15px;
+   border-bottom: 1px solid seagreen;
+   padding-bottom: 15px;
+}
+.searchTemp{
+    text-transform: uppercase;
+    font-size: 45px;
+    color:#ffffff; 
+    padding-left: 45px;  
+    width:25%;
+    flex:11;  
+}
+.climateContainer{
+    margin-top: 8px;
+    padding-bottom: 15px;  
+}
+ .climateType { 
+    border-radius: 20px;
+    font: 300 16px "Open Sans";
+    text-transform: capitalize;
+    font-style: normal;
+    padding: 2px 30px;
+    margin-top: 15px;
+    display: inline-block;
+    letter-spacing: 1px;
+    background: cadetblue;
+    color: #fff;
+    text-transform: uppercase;
+}
+.humidityContainer,.pressureContainer{
+    text-transform: uppercase;
+    padding-left: 45px;
+    padding-right: 45px;
+    color:#ffffff; 
+    width: 25%; 
+}
+.subtitle{
+    color:black;
+    font-size: 18px;
+    text-align: center;  
+}
+.pressure,.humidity{
+    font-size: 32px;
+    margin-top: 15px;
+    text-align: center;  
+}
+.secondRow{
+    display:flex;
+   margin-top: 18px;
+   border-bottom: 1px solid seagreen;
+   padding-bottom: 15px;
+}
+.wind,.third{
+    text-transform: uppercase;
+    flex:11;
+    color:#ffffff; 
+    width: 25%; 
+}
+.secondrowTitle,.thirdrowTitle{
+    color:black;
+    font-size: 18px;
+    text-align: left; 
+    text-align: center;   
+}
+.windTemp,.thirdDetails{
+    font-size: 32px; 
+    text-align: center;  
+    padding: 11px;
+}
+.thirdRow{
+    display:flex;
+    margin-top: 18px;
+    padding-bottom: 15px;  
+}

@@ -1,0 +1,48 @@
+<!--Home page-->
+<!--Search section-->
+<div class="mainContainer">
+    <div class="bodyContainer">
+        <div class="container">
+            <div class="searchContainer">
+                <!--input section-->
+                <div class="inputBox">
+                    <div class="input"><input type="text" placeholder="SEARCH..." #userinput></div>
+                </div>
+                <!--button section-->
+                <div class="buttonBox">
+                    <div class="searchButton">
+                        <button (click)="getCity(userinput.value)">SEARCH
+                        </button></div>
+                </div>
+            </div>
+            <!--warning for invalid city name-->
+            <div *ngIf="errorMessage" id="alert">
+                <span>City not found ! Please enter valid city...</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Card section-->
+<div class="cardContainer">
+    <div class="cardsubContainer">
+        <div class="cards">
+            <!--to iterate data for locations-->
+            <div class="card" *ngFor="let location of copyData">
+                <a [routerLink]="['/location']" [queryParams]="{cityname:location.name}">
+                    <!--to display city name-->
+                    <div class="cardHeading">{{location.name}}</div>
+                    <div class="carddetails">
+                        <div class="tempContainer">
+                            <!--to display temperature -->
+                            {{(location.main.temp-273.15).toFixed(0)}}<span>°C</span>
+                            <div class="climateContainer">
+                                <!--to display weather type-->
+                                <div class="climateType">{{location.weather[0].description}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
