@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component'
 import { Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
+import { SampleComponent } from './sample/sample.component';
 
 const routes: Routes = [
   { path: '/location' }
@@ -17,7 +18,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    SampleComponent
 
   ],
   imports: [
